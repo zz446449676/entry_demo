@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.example.entry_demo.view.EntryView
+        android:id="@+id/abs_1"
+        android:layout_height="54dp"
+        android:layout_width="60dp"
+        android:layout_marginEnd="18dp"
+        app:entryText="飞机票"
+        app:img="@drawable/abs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cbs_2" />
+
+    <com.example.entry_demo.view.EntryView
+        android:id="@+id/cbs_2"
+        android:layout_height="54dp"
+        android:layout_width="60dp"
+        android:layout_marginEnd="18dp"
+        app:entryText="巴士"
+        app:img="@drawable/cbs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/abs_1"
+        app:layout_constraintEnd_toStartOf="@id/ctbs_3" />
+
+    <com.example.entry_demo.view.EntryView
+        android:id="@+id/ctbs_3"
+        android:layout_height="54dp"
+        android:layout_width="60dp"
+        android:layout_marginEnd="18dp"
+        app:entryText="定制游"
+        app:img="@drawable/ctbs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cbs_2"
+        app:layout_constraintEnd_toStartOf="@id/destination_4" />
+
+    <com.example.entry_demo.view.EntryView
+        android:id="@+id/destination_4"
+        android:layout_height="54dp"
+        android:layout_width="60dp"
+        android:layout_marginEnd="18dp"
+        app:entryText="旅游攻略"
+        app:img="@drawable/destination"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ctbs_3"
+        app:layout_constraintEnd_toStartOf="@id/gbs_5" />
+
+    <com.example.entry_demo.view.EntryView
+        android:id="@+id/gbs_5"
+        android:layout_height="54dp"
+        android:layout_width="60dp"
+        android:layout_marginEnd="18dp"
+        app:entryText="酒店"
+        app:img="@drawable/gbs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/destination_4"
+        app:layout_constraintEnd_toStartOf="@id/home_fbs_6" />
+
+    <com.example.entry_demo.view.EntryView
+        android:id="@+id/home_fbs_6"
+        android:layout_height="54dp"
+        android:layout_width="60dp"
+        android:layout_marginEnd="18dp"
+        app:entryText="游乐园"
+        app:img="@drawable/home_fbs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gbs_5"
+        app:layout_constraintEnd_toStartOf="@id/lbs_7" />
+
+    <com.example.entry_demo.view.EntryView
+        android:id="@+id/lbs_7"
+        android:layout_height="54dp"
+        android:layout_width="60dp"
+        android:layout_marginEnd="18dp"
+        app:entryText="餐食"
+        app:img="@drawable/lbs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/home_fbs_6"
+        app:layout_constraintEnd_toStartOf="@id/nlbs_8" />
+
+    <com.example.entry_demo.view.EntryView
+        android:id="@+id/nlbs_8"
+        android:layout_height="54dp"
+        android:layout_width="60dp"
+        android:layout_marginEnd="18dp"
+        app:entryText="高铁"
+        app:img="@drawable/nlbs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lbs_7"
+        app:layout_constraintEnd_toStartOf="@id/pbs_9" />
+
+    <com.example.entry_demo.view.EntryView
+        android:id="@+id/pbs_9"
+        android:layout_height="54dp"
+        android:layout_width="60dp"
+        android:layout_marginEnd="18dp"
+        app:entryText="机票酒店"
+        app:img="@drawable/pbs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nlbs_8"
+        app:layout_constraintEnd_toStartOf="@id/rbs_10" />
+
+    <com.example.entry_demo.view.EntryView
+        android:id="@+id/rbs_10"
+        android:layout_height="54dp"
+        android:layout_width="60dp"
+        android:layout_marginEnd="18dp"
+        app:entryText="游轮"
+        app:img="@drawable/rbs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/pbs_9"
+        app:layout_constraintEnd_toStartOf="@id/staycation_11" />
+
+    <com.example.entry_demo.view.EntryView
+        android:id="@+id/staycation_11"
+        android:layout_height="54dp"
+        android:layout_width="60dp"
+        android:layout_marginEnd="18dp"
+        app:entryText="度假"
+        app:img="@drawable/staycation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/rbs_10"
+        app:layout_constraintEnd_toStartOf="@id/tbs_12" />
+
+    <com.example.entry_demo.view.EntryView
+        android:id="@+id/tbs_12"
+        android:layout_height="54dp"
+        android:layout_width="60dp"
+        android:layout_marginEnd="18dp"
+        app:entryText="旅行团"
+        app:img="@drawable/tbs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/staycation_11"
+        app:layout_constraintEnd_toStartOf="@id/frbs_13" />
+
+    <com.example.entry_demo.view.EntryView
+        android:id="@+id/frbs_13"
+        android:layout_height="54dp"
+        android:layout_width="60dp"
+        app:entryText="火车票"
+        app:img="@drawable/frbs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tbs_12"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
